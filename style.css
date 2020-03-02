@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis:400,700|Oswald:400,700&display=swap");
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  overflow-X: hidden;
+}
+
+.container {
+  width: 100vw;
+  background-color: #303030;
+  height: 100vh;
+}
+.head {
+  display: flex;
+  align-items: center;
+  margin-left: 2vw;
+}
+#logo {
+  width: 15vw;
+  margin-right: 3.3vw;
+}
+h1 {
+  font-family: "Dosis", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+}
+.ref {
+  margin-bottom: 2%;
+}
+#eve {
+  font-family: 'Oswald',sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  margin-left: 2vw;
+}
+#cat {
+  font-family: 'Oswald',sans-serif;
+  font-size: 1rem;
+  font-weight: lighter;
+  color: white;
+}
+
+.txt {
+  width: 50vw;
+  padding: 0px 10px 0px 10px;
+  background-color: #5c5c5c;
+  border: 3px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 2px;
+  margin-bottom: 3%;
+  color: white;
+  font-family: 'Dosis',sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.2rem;
+}
+.selectors {
+  margin-left: 2vw;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 8%;
+}
+.rank-no {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  color: white;
+  font-size: 2rem;
+  /* margin-right: 5%; */
+   width: 20%; 
+   margin-left: 3%;
+}
+.rank-team {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: .85%;
+  margin-bottom: 3%;
+  
+}
+.team-id {
+    font-family: 'Dosis',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 1vw;
+}
+.rank-column {
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+.rank-of-team {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+@media only screen and (min-width: 800px) {
+    #logo {
+        width: 8vw;
+        margin-right: 3.3vw;
+      }
+
+      .selectors{
+          display: flex;
+          flex-direction: row;
+      }
+      .txt{
+          width: 25vw;
+          margin-right: 5vw;
+      }
+      .results{
+          margin-top: 2%;
+      }
+
+      .rank-team{
+          margin-bottom: 2%      }
+
+}

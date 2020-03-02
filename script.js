@@ -28,8 +28,8 @@ window.addEventListener("load", () => {
       })
       .then(function(json) {
         for (var i = 0; i < json.data.length; i = i + 1){ cat_json.push(json.data[i]);}
-        console.log(json);
-        console.log(json.data.length)
+        // console.log(json);
+        // console.log(json.data.length)
         
         //console.log("here")
 
@@ -81,14 +81,14 @@ window.addEventListener("load", () => {
       });
   };
   var add_cat = () =>{
-    console.log(cat_json.length)
+    // console.log(cat_json.length)
     for (var i = 0; i < cat_json.length; i = i + 1) {
       
       //console.log(json.data[i].name)
       
       if (cat_json[i].type === "CULTURAL") {
           //console.log(json.data[i].name)
-          console.log(cat_json[i].name);
+        //   console.log(cat_json[i].name);
           cat_select.innerHTML+= '<option value="'+ cat_json[i].id +'">'+ cat_json[i].name +'</option>'
       }
      
@@ -99,7 +99,7 @@ window.addEventListener("load", () => {
     event_name.innerHTML = "";
     cat_name.innerHTML = "/" + cat_select.options[cat_select.selectedIndex].text
      select_cat = cat_select.options[cat_select.selectedIndex].value;
-    console.log(select_cat);
+    // console.log(select_cat);
     event_select.style.display = "block";
     for(var i=0;i<events_json.length;i++)
     {
@@ -114,7 +114,7 @@ window.addEventListener("load", () => {
     round_select.innerHTML = "";
     event_name.innerHTML = event_select.options[event_select.selectedIndex].text;
      select_event = event_select.options[event_select.selectedIndex].value;
-    console.log(results_json);
+   // console.log(results_json);
    // let max = 0;
     
     let flag = 0; 
@@ -126,7 +126,7 @@ window.addEventListener("load", () => {
 
       }
     }
-    console.log(flag)
+  //  console.log(flag)
     if(flag == 0)
     {
       result.innerHTML = "No Result to diplay.";
@@ -157,23 +157,23 @@ window.addEventListener("load", () => {
     if(pos == 1)
    { b.innerHTML = "1st";
       y.style.background = "#FCBE47"
-      y.style.width = "80%"
+      y.style.width = "75%"
   }
     else if(pos == 2)
-   { b.innerHTML = "2nd";
+   { b.innerHTML = "2nd ";
    y.style.background = "#CCCCCB"
-   y.style.width = "70%"
+   y.style.width = "65%"
 
   }
     else if(pos == 3)
    { b.innerHTML = "3rd";
    y.style.background = "#CD7F32"
-   y.style.width = "60%"
+   y.style.width = "55%"
 }
     else
    { b.innerHTML = pos+"th";
     y.style.background = "#474747";
-    y.style.width = "50%"
+    y.style.width = "45%"
   }
 
     a.innerHTML = "#"+id;
@@ -189,7 +189,7 @@ window.addEventListener("load", () => {
   round_select.addEventListener('click',() =>{
     result.innerHTML = "";
     var round_event = round_select.options[round_select.selectedIndex].value;
-    console.log(round_event)
+    //console.log(round_event)
     for(var i=0;i<results_json.length;i++)
     {
       if(round_event == results_json[i].round && select_event == results_json[i].event) 

@@ -94,13 +94,14 @@ window.addEventListener("load", () => {
      
   }
   };
-  cat_select.addEventListener('click',() =>{
+  cat_select.addEventListener('change',() =>{
     event_select.innerHTML = "";
     event_name.innerHTML = "";
     cat_name.innerHTML = "/" + cat_select.options[cat_select.selectedIndex].text
      select_cat = cat_select.options[cat_select.selectedIndex].value;
     // console.log(select_cat);
     event_select.style.display = "block";
+    event_select.innerHTML='<option selected disabled>Select Event</option>'
     for(var i=0;i<events_json.length;i++)
     {
       if(events_json[i].category == select_cat)
@@ -110,7 +111,7 @@ window.addEventListener("load", () => {
     }
   })
 
-  event_select.addEventListener('click',() =>{
+  event_select.addEventListener('change',() =>{
     round_select.innerHTML = "";
     event_name.innerHTML = event_select.options[event_select.selectedIndex].text;
      select_event = event_select.options[event_select.selectedIndex].value;
@@ -136,6 +137,7 @@ window.addEventListener("load", () => {
     else
     {
       round_select.style.display = "block";
+      round_select.innerHTML='<option selected disabled>Select Round</option>'
       for(var i=0;i<flag;i++)
       {
         round_select.innerHTML+= '<option value="'+ i+1 +'">'+ i+1 +'</option>'
@@ -186,7 +188,7 @@ window.addEventListener("load", () => {
     return x;
   }
   
-  round_select.addEventListener('click',() =>{
+  round_select.addEventListener('change',() =>{
     result.innerHTML = "";
     var round_event = round_select.options[round_select.selectedIndex].value;
     //console.log(round_event)

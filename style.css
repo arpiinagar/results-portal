@@ -92,7 +92,7 @@ video {
 
 .container {
   width: 100vw;
-  background-color: #333232;
+  background-color: #4d4c4c;
   height: 100vh;
 }
 .head {
@@ -130,8 +130,9 @@ h1 {
 .txt {
   width: 70vw;
   padding: 0px 10px 0px 10px;
-  background-color: #5c5c5c;
-  border: 3px solid #ffffff;
+  background: #C4C4C4;
+box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
+  border: 1px solid #ffffff;
   box-sizing: border-box;
   border-radius: 2px;
   margin-bottom: 3%;
@@ -189,7 +190,7 @@ h1 {
 
 .rank-column::nth-child(1)
 {
-    margin-left: 4px;
+    margin-left: 100px;
 }
 .rank-of-team {
   font-family: "Oswald", sans-serif;

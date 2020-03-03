@@ -92,7 +92,7 @@ video {
 
 .container {
   width: 100vw;
-  background-color: #4d4c4c;
+  background-color: #5C5C5C;
   height: 100vh;
 }
 .head {
@@ -118,7 +118,6 @@ h1 {
   font-size: 2.5rem;
   font-weight: bold;
   color: white;
-  margin-left: 2vw;
 }
 #cat {
   font-family: "Oswald", sans-serif;
@@ -130,7 +129,7 @@ h1 {
 .txt {
   width: 70vw;
   padding: 0px 10px 0px 10px;
-  background: #C4C4C4;
+  background: #5C5C5C;
 box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
   border: 1px solid #ffffff;
   box-sizing: border-box;
@@ -145,12 +144,19 @@ box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
 .selectors {
   margin-left: 2vw;
 }
-
+.ref{
+  margin-left: 2%;
+}
 .results {
   display: flex;
   flex-direction: column;
   width: 100%;
   margin-top: 8%;
+  margin-bottom: 5%;
+}
+.rank-no:first-child
+{
+  width: 22%;
 }
 .rank-no {
   font-family: "Oswald", sans-serif;
@@ -161,6 +167,12 @@ box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
   /* margin-right: 5%; */
   width: 20%;
   margin-left: 3%;
+}
+.no-res{
+  text-align: center;
+  font-size: 2rem;
+  color: whitesmoke;
+  font-family: 'Oswald',sans-serif;
 }
 .rank-team {
   display: flex;
@@ -186,12 +198,13 @@ box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
   height: auto;
   padding-top: 2px;
   padding-bottom: 2px;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
 }
 
-.rank-column::nth-child(1)
+/* .rank-column::nth-child(1)
 {
     margin-left: 100px;
-}
+} */
 .rank-of-team {
   font-family: "Oswald", sans-serif;
   font-style: normal;

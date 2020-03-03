@@ -99,7 +99,9 @@ window.addEventListener("load", () => {
     event_name.innerHTML = "";
     cat_name.innerHTML = "/" + cat_select.options[cat_select.selectedIndex].text
      select_cat = cat_select.options[cat_select.selectedIndex].value;
+     round_select.style.display = "none";
     // console.log(select_cat);
+    result.innerHTML = "";
     event_select.style.display = "block";
     event_select.innerHTML='<option selected disabled>Select Event</option>'
     for(var i=0;i<events_json.length;i++)
@@ -130,12 +132,15 @@ window.addEventListener("load", () => {
   //  console.log(flag)
     if(flag == 0)
     {
-      result.innerHTML = "No Result to diplay.";
+      result.innerHTML = "To be Declared Soon."
+      result.classList.add("no-res");
       round_select.style.display = "none";
 
     }
     else
     {
+      result.classList.remove("no-res");
+      result.innerHTML = "";
       round_select.style.display = "block";
       round_select.innerHTML='<option selected disabled>Select Round</option>'
       for(var i=0;i<flag;i++)
@@ -157,9 +162,9 @@ window.addEventListener("load", () => {
     var b = document.createElement("div");
     b.classList.add("rank-no");
     if(pos == 1)
-   { b.innerHTML = "1st";
+   { b.innerHTML = "1nd";
       y.style.background = "#FCBE47"
-      y.style.width = "75%"
+      y.style.width = "70%"
   }
     else if(pos == 2)
    { b.innerHTML = "2nd ";
